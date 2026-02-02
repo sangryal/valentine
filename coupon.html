@@ -10,32 +10,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f7f2e7;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe0ec, #ffd6a5);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         .note {
-            width: 350px;
-            padding: 20px;
-            background: #e6d8a8;
-            border: 3px dashed #5a4a2f;
-            border-radius: 15px;
+            width: 360px;
+            padding: 25px;
+            background: #fff8dc;
+            border: 4px dashed #ff4d6d;
+            border-radius: 20px;
             text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            animation: float 3s ease-in-out infinite;
         }
 
-        .note h1 {
-            margin: 5px 0;
-            font-size: 28px;
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
         }
 
-        .note h2 {
-            margin: 5px 0;
-            font-size: 20px;
+        h1 {
+            margin: 10px 0;
+            color: #ff4d6d;
         }
 
         .amount {
-            font-size: 40px;
+            font-size: 42px;
             font-weight: bold;
             margin: 15px 0;
         }
@@ -43,6 +44,12 @@
         .funny {
             font-size: 14px;
             margin-top: 15px;
+        }
+
+        .rules {
+            font-size: 13px;
+            margin-top: 15px;
+            text-align: left;
         }
 
         .footer {
@@ -55,20 +62,28 @@
 <body>
 
     <div class="note">
-        <h2>💖 Official Valentine Reward Note 💖</h2>
+        <h1>💖 Official Valentine Reward Note 💖</h1>
         <div class="amount">₹10</div>
-        <p>This coupon is redeemable for:</p>
-        <h1>1 Hug 🤗 OR 1 Kiss 😘</h1>
+
+        <p>This premium reward can be redeemed for:</p>
+        <h2>🤗 1 Tight Hug OR 😘 1 Sweet Kiss</h2>
 
         <p class="funny">
-            To redeem this reward,<br>
-            please contact the concerned person immediately.<br><br>
-            Valid for lifetime. No expiry. No refunds. 😜
+            To claim this reward, please contact the concerned person immediately.<br>
+            Delays may result in extra kisses being added automatically 😜
         </p>
+
+        <div class="rules">
+            <strong>Terms & Conditions:</strong><br>
+            • Valid only for the cutest wife in the world 💕<br>
+            • Non-transferable 🚫<br>
+            • No expiry date ⏳<br>
+            • Husband reserves the right to add bonus hugs anytime 🤭
+        </div>
 
         <div class="footer">
             With love,<br>
-            Your Loving Husband ❤️
+            <strong>Your Loving Husband ❤️</strong>
         </div>
     </div>
 
